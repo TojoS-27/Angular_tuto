@@ -1,10 +1,34 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: "app-root",
+  templateUrl: "./app.component.html",
+  styleUrls: ["./app.component.scss"]
 })
 export class AppComponent {
-  title = 'My Test';
+  isAuth = false;
+
+  appareils = [
+    {
+      name: "Machine à laver",
+      status: "éteint"
+    },
+    {
+      name: "Télévision",
+      status: "allumer"
+    },
+    {
+      name: "Odinateur",
+      status: "éteint"
+    }
+  ];
+
+  constructor() {
+    setTimeout(() => {
+      this.isAuth = true;
+    }, 4000);
+  }
+  onAllumer() {
+    console.log("On allume tout!");
+  }
 }
