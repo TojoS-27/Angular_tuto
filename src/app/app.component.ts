@@ -15,7 +15,7 @@ export class AppComponent {
     },
     {
       name: "Télévision",
-      status: "allumer"
+      status: "allumé"
     },
     {
       name: "Odinateur",
