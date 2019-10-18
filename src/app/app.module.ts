@@ -7,10 +7,11 @@ import { AppComponent } from "./app.component";
 import { MyFirstComponent } from "./my-first/my-first.component";
 import { AppareilComponent } from "./appareil/appareil.component";
 
+import { AppareilService } from "./services/appareil.service";
 @NgModule({
   declarations: [AppComponent, MyFirstComponent, AppareilComponent],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
-  providers: [],
+  providers: [AppareilService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

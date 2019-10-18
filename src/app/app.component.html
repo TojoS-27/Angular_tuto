@@ -346,7 +346,8 @@
       <p>Mise à jour: {{ lastUpdate | async | date: "dd-MMM-yyy, h:m" }}</p>
       <ul class="list-group">
         <app-appareil
-          *ngFor="let appareil of appareils"
+          *ngFor="let appareil of appareils; let i = index"
+          [indexOfAppareil]="i"
           [appareilName]="appareil.name"
           [appareilStatus]="appareil.status"
         ></app-appareil>
@@ -354,11 +355,16 @@
       <br />
       <button
         class="btn btn-success"
-        [disabled]="!isAuth"
         (click)="onAllumer()"
       >
         Tout allumer
       </button>
+      <button
+      class="btn btn-danger"
+      (click)="onEteindre()"
+    >
+      Tout éteindre
+    </button>
     </div>
   </div>
 </div>
