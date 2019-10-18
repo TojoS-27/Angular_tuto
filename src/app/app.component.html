@@ -343,13 +343,15 @@
   <div row>
     <div col-xs-12>
       <h2>Mes appareils</h2>
+      <p>Mise à jour: {{ lastUpdate | async | date: "dd-MMM-yyy, h:m" }}</p>
       <ul class="list-group">
-        <app-appareil *ngFor="let appareil of appareils" 
-        [appareilName]="appareil.name" 
-        [appareilStatus]="appareil.status"
+        <app-appareil
+          *ngFor="let appareil of appareils"
+          [appareilName]="appareil.name"
+          [appareilStatus]="appareil.status"
         ></app-appareil>
       </ul>
-      <br/>
+      <br />
       <button
         class="btn btn-success"
         [disabled]="!isAuth"
