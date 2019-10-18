@@ -2,7 +2,7 @@ export class AppareilService {
   appareils = [
     {
       name: "Machine à laver",
-      status: "éteint"
+      status: "allumé"
     },
     {
       name: "Télévision",
@@ -10,7 +10,7 @@ export class AppareilService {
     },
     {
       name: "Odinateur",
-      status: "éteint"
+      status: "allumé"
     }
   ];
 
