@@ -2,13 +2,18 @@
   <div class="nav nav-tabs" id="nav-tab" role="tablist">
     <ul class="nav navbar">
       <li routerLinkActive="active">
-        <a class="nav-item nav-link" routerLink="/auth">Authentification</a>
+        <a class="nav-item nav-link" routerLink="auth">Authentification</a>
       </li>
       <li routerLinkActive="active">
         <a class="nav-item nav-link" routerLink="/appareils">Appareils</a>
       </li>
+      <li routerLinkActive="active">
+        <a class="nav-item nav-link" routerLink="edit">Nouvel appareil</a>
+      </li>
       <li>
-        <a>Vous êtes connecté depuis: {{ secondes }} secondes !</a>
+        <a class="nav-item nav-link"
+          >Vous êtes connecté depuis: {{ secondes }} secondes !</a
+        >
       </li>
     </ul>
   </div>
