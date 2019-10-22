@@ -1,5 +1,9 @@
+<!-- <a routerLink="/new-user">+ Ajouter nouvelle utilisateur</a> -->
 <ul class="list-group">
-  <li class="list-item" *ngFor="let user of users">
+  <li class="list-group-item">
+    <a routerLink="/new-user">+ Ajouter nouvelle utilisateur</a>
+  </li>
+  <li class="list-group-item" *ngFor="let user of users">
     <h3>{{ user.firstname }} {{ user.lastname }}</h3>
     <p>{{ user.email }}</p>
     <p>Cette personne préfère le {{ user.drinkPreference }}</p>

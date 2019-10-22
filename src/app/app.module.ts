@@ -17,6 +17,7 @@ import { AuthGuard } from "./services/auth-guard.service";
 import { EditAppareilComponent } from "./edit-appareil/edit-appareil.component";
 import { UserListComponent } from "./user-list/user-list.component";
 import { UserService } from "./services/user.service";
+import { NewUserComponent } from './new-user/new-user.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +28,8 @@ import { UserService } from "./services/user.service";
     SingleAppareilComponent,
     FourOhFourComponent,
     EditAppareilComponent,
-    UserListComponent
+    UserListComponent,
+    NewUserComponent
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
   providers: [AppareilService, AuthService, AuthGuard, UserService],
